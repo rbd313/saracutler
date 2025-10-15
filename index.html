@@ -16,6 +16,7 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#artist-calls">Artist Calls</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -71,6 +72,27 @@ Publications
 
 
       </pre>
+  </section>
+
+  <section id="artist-calls" class="section">
+    <h2>קולות קוראים לאמנים / Artist Calls</h2>
+    <div class="artist-calls-content">
+      <p>הרשם לקבלת התראות על קולות קוראים חדשים / Subscribe to receive notifications about new artist calls</p>
+      
+      <div class="subscription-form-container">
+        <form id="artist-calls-subscription" action="https://formspree.io/f/xwpkevda" method="POST">
+          <input type="email" name="email" placeholder="Your Email / האימייל שלך" required>
+          <input type="hidden" name="_subject" value="New subscription to artist calls notifications">
+          <input type="hidden" name="_next" value="#artist-calls">
+          <button type="submit">הירשם / Subscribe</button>
+        </form>
+      </div>
+
+      <div id="current-calls" class="calls-list">
+        <h3>קולות קוראים פעילים / Active Calls</h3>
+        <div id="calls-container"></div>
+      </div>
+    </div>
   </section>
 
   <section id="portfolio" class="section">

@@ -131,6 +131,120 @@ form button:hover {
   text-decoration: none;
 }
 
+/* Artist Calls Section */
+.artist-calls-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscription-form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+#artist-calls-subscription {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#artist-calls-subscription input[type="email"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#artist-calls-subscription button {
+  padding: 0.8rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+#artist-calls-subscription button:hover {
+  background-color: #0056b3;
+}
+
+#artist-calls-subscription button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.calls-list {
+  margin-top: 3rem;
+}
+
+.calls-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#calls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.call-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #007bff;
+}
+
+.call-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.call-item p {
+  margin: 0.5rem 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.call-item .deadline {
+  color: #d32f2f;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.call-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.call-link:hover {
+  background-color: #0056b3;
+}
+
+.no-calls {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 2rem;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -150,5 +264,21 @@ footer {
 
   .section h2 {
     font-size: 1.5rem;
+  }
+
+  #artist-calls-subscription {
+    flex-direction: column;
+  }
+
+  #artist-calls-subscription input[type="email"] {
+    width: 100%;
+  }
+
+  #artist-calls-subscription button {
+    width: 100%;
+  }
+
+  .subscription-form-container {
+    padding: 1rem;
   }
 }
